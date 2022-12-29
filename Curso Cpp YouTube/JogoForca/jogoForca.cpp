@@ -4,6 +4,10 @@
 
 using namespace std;
 
+void informarPalavra(char * palavra){
+    cout << "Informe a palavra secreta: ";
+    cin >> palavra;
+}
 
 char informarLetra(){
     char letra;
@@ -102,7 +106,9 @@ int executarJogo(char * palavra){
 }
 
 int main(int argc, char const *argv[]){
-    char palavra[10] = "macaco";
+    char palavra[20];
+    informarPalavra(palavra);
+    system("clear");
     executarJogo(palavra);
     return 0;
 }
