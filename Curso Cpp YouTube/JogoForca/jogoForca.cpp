@@ -4,6 +4,12 @@
 
 using namespace std;
 
+void iniciarVetorLetrasRepetidas(char * vetorLetras, int tam){
+    for(int i = 0; i<tam; i++){
+        vetorLetras[i] = '\n';
+    }
+}
+
 void informarPalavra(char * palavra){
     cout << "Informe a palavra secreta: ";
     cin >> palavra;
@@ -65,9 +71,12 @@ void mostrarForca(char * forca, int tam){
 int executarJogo(char * palavra){
   
     char letra;
-    char letrasInformadas[12] = {'\n','\n','\n','\n','\n','\n','\n','\n','\n','\n','\n', '\n'};
+    char letrasInformadas[12];
     char forca[strlen(palavra)];
 
+
+    iniciarVetorLetrasRepetidas(letrasInformadas, 12);
+    
     int retorno = 1, rodada = 0, acertos = 0, chances = 6, j = 0;
 
     iniciarForca(forca, strlen(palavra));
