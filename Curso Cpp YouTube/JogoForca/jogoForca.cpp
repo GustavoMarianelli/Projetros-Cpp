@@ -102,7 +102,7 @@ int executarJogo(char * palavra){
         cout << "Você acertou a palavra " << palavra << ". Parabéns!\n";
     }
     else
-        cout << "Você não acertou a palavra " << palavra << ".\n";
+        cout << "Você não acertou a palavra \"" << palavra << "\".\n";
 }
 
 int main(int argc, char const *argv[]){
