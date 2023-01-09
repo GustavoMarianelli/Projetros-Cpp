@@ -88,15 +88,6 @@ int main(int argc, const char** argv) {
 
     // //abs - valor absoluto de um número
 
-    int n = -10;
-    cout << abs(n) << endl;
-
-    int num = 10, den = 3;
-    div_t res;
-
-    res=div(num, den);
-    cout << res << endl;
-
 
     return 0;
 }
