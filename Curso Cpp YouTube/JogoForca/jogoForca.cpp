@@ -13,6 +13,9 @@ void iniciarVetorLetrasRepetidas(char * vetorLetras, int tam){
 void informarPalavra(char * palavra){
     cout << "Informe a palavra secreta: ";
     cin >> palavra;
+    fot(i=0; i<strlen(palavra); i++){
+        tolower(palavra[i]);
+    }
 }
 
 char informarLetra(){
