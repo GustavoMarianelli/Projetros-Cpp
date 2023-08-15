@@ -51,6 +51,7 @@ void iniciarForca(char * forca, int tam){
         forca[i] = '_';
     }
 }
+
 void montarForca(char letra, char * palavra, char * forca){
 
     int tam = strlen(palavra);

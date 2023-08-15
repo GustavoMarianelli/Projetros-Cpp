@@ -31,6 +31,6 @@ int main(int argc, const char** argv) {
 
     cout << soma() << endl << maior({2,5,1,8,12,6}) << endl;
 
-
+    
     return 0;
 }
